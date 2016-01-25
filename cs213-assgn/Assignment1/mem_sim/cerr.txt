@@ -1,0 +1,17 @@
+mem_simv2.cpp: In function ‘int main()’:
+mem_simv2.cpp:60:28: error: no matching function for call to ‘std::list<Ref>::erase(Ref*&)’
+    mem_perm.erase(arr1[x-1]);
+                            ^
+mem_simv2.cpp:60:28: note: candidates are:
+In file included from /usr/include/c++/4.8/list:64:0,
+                 from mem_simv2.cpp:3:
+/usr/include/c++/4.8/bits/list.tcc:108:5: note: std::list<_Tp, _Alloc>::iterator std::list<_Tp, _Alloc>::erase(std::list<_Tp, _Alloc>::iterator) [with _Tp = Ref; _Alloc = std::allocator<Ref>; std::list<_Tp, _Alloc>::iterator = std::_List_iterator<Ref>]
+     list<_Tp, _Alloc>::
+     ^
+/usr/include/c++/4.8/bits/list.tcc:108:5: note:   no known conversion for argument 1 from ‘Ref*’ to ‘std::list<Ref>::iterator {aka std::_List_iterator<Ref>}’
+In file included from /usr/include/c++/4.8/list:63:0,
+                 from mem_simv2.cpp:3:
+/usr/include/c++/4.8/bits/stl_list.h:1193:7: note: std::list<_Tp, _Alloc>::iterator std::list<_Tp, _Alloc>::erase(std::list<_Tp, _Alloc>::iterator, std::list<_Tp, _Alloc>::iterator) [with _Tp = Ref; _Alloc = std::allocator<Ref>; std::list<_Tp, _Alloc>::iterator = std::_List_iterator<Ref>]
+       erase(iterator __first, iterator __last)
+       ^
+/usr/include/c++/4.8/bits/stl_list.h:1193:7: note:   candidate expects 2 arguments, 1 provided
