@@ -47,28 +47,28 @@ public:
 	}
 };
 
-// int main()
-// {
-// 	Height a(176, "cm"), b(180, "cm"),c;
-// 	cout << "a = " << a.val << a.unit<< endl;
-// 	cout << "b = " << b.val << b.unit << endl;
-// 	c = ++a;
-// 	cout << " ++a = " << c.val << c.unit << endl;
-// 	c = a++;
-// 	cout << " a++ = " << c.val << c.unit << endl;
-// 	c = a++ + ++b;
-// 	cout << " a++ + ++b = " << c.val << c.unit << endl;
-// }
-
 int main()
 {
 	Height a(176, "cm"), b(180, "cm"),c;
-	cout << " a = " << a.val << a.unit<< endl;
-	cout << " b = " << b.val << b.unit << endl;
-	c = a.operator++();	//prefix form
+	cout << "a = " << a.val << a.unit<< endl;
+	cout << "b = " << b.val << b.unit << endl;
+	c = ++a;
 	cout << " ++a = " << c.val << c.unit << endl;
-	c = a.operator++(0); //postfix form
+	c = a++;
 	cout << " a++ = " << c.val << c.unit << endl;
-	c = a.operator++(0).operator+( b.operator++());
+	c = a++ + ++b;
 	cout << " a++ + ++b = " << c.val << c.unit << endl;
 }
+
+// int main()
+// {
+// 	Height a(176, "cm"), b(180, "cm"),c;
+// 	cout << " a = " << a.val << a.unit<< endl;
+// 	cout << " b = " << b.val << b.unit << endl;
+// 	c = a.operator++();	//prefix form
+// 	cout << " ++a = " << c.val << c.unit << endl;
+// 	c = a.operator++(0); //postfix form
+// 	cout << " a++ = " << c.val << c.unit << endl;
+// 	c = a.operator++(0).operator+( b.operator++());
+// 	cout << " a++ + ++b = " << c.val << c.unit << endl;
+// }

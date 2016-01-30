@@ -1,0 +1,16 @@
+15
+a abcdefg
+e 6
+a pq
+a r
+g 6
+u
+g 3
+u
+r
+g 1
+u
+a s
+r
+u
+g 4
